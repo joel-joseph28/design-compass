@@ -10,8 +10,12 @@ Design Compass aspires to be the go-to platform for navigating the ever-evolving
 
 ```
 Design Compass/
-├── app/            # Application code (Next.js)
-├── data/           # Unprocessed data folder
+├── .github/workflows/   # GitHub Actions workflows
+├── app/                 # Application code (Next.js)
+├── data/                # Unprocessed data folder
+├── json-generator/      # JSON data generator (Submodule)
+├── worker/              # Cloudflare Worker to upload data to R2
+├── .gitmodules          # Submodule configuration
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 └── README.md
