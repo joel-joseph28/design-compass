@@ -21,7 +21,7 @@ Design Compass/
 └── README.md
 ```
 
-The `app` folder contains all the Next.js code for the Design Compass platform. The `data` folder is dedicated to storing unprocessed data, making it easier for non-technical contributors to add valuable content to the project.
+The `app` folder contains all the Next.js code for the Design Compass platform. The `data` folder is dedicated to storing unprocessed data, making it easier for non-technical contributors to add valuable content to the project. The `json-generator` submodule is a tool for generating JSON data easily, so that non-technical contributors can add data to the project. The `worker` folder contains the code for a Cloudflare Worker that uploads data to R2.
 
 ## How to Contribute
 
