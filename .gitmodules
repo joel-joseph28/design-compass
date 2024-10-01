@@ -1,0 +1,3 @@
+[submodule "json-generator"]
+	path = json-generator
+	url = https://github.com/Amith-Abey-Stephen/json-generator.git

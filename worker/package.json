@@ -1,0 +1,25 @@
+{
+  "name": "r2-upload-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for uploading images to R2",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "keywords": [
+    "cloudflare",
+    "r2-upload-worker",
+    "r2",
+    "upload"
+  ],
+  "author": "Arjun Krishna",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "nanoid": "^3.3.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "wrangler": "^3.0.0"
+  }
+}
