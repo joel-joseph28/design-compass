@@ -1,7 +1,10 @@
 export default {
     async fetch(request, env, ctx) {
+        
+        const origin = request.headers.get('Origin');
+
         if (request.method === 'OPTIONS') {
-            return handleOptions();
+            return handleOptions(origin);
         }
 
         if (request.method !== 'POST') {
@@ -40,11 +43,19 @@ export default {
     }
 };
 
-function handleOptions() {
+function handleOptions(origin) {
+    
+    const allowedOrigins = [
+        'https://decoded-cipher.github.io',
+        'https://amith-abey-stephen.github.io'
+    ];
+
+    const allowOrigin = allowedOrigins.includes(origin) ? origin : '';
+    
     return new Response(null, {
         status: 204,
         headers: {
-            'Access-Control-Allow-Origin': 'decoded-cipher.github.io, amith-abey-stephen.github.io',
+            'Access-Control-Allow-Origin': allowOrigin,
             'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
             'Access-Control-Allow-Headers': 'Content-Type',
             'Access-Control-Max-Age': '86400',
@@ -57,7 +68,7 @@ function jsonResponse(data, status = 200) {
         status,
         headers: { 
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'decoded-cipher.github.io, amith-abey-stephen.github.io',
+            'Access-Control-Allow-Origin': '*',
         },
     });
 }
