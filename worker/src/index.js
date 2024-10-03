@@ -46,8 +46,7 @@ export default {
 function handleOptions(origin) {
     
     const allowedOrigins = [
-        'https://decoded-cipher.github.io',
-        'https://amith-abey-stephen.github.io'
+        'https://json.dc.inovuslabs.org'
     ];
 
     const allowOrigin = allowedOrigins.includes(origin) ? origin : '';
