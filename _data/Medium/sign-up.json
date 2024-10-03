@@ -1,0 +1,17 @@
+{
+  "name": "Sign Up",
+  "product_category": [
+    "news"
+  ],
+  "screens": [
+    "welcome-get-started",
+    "signup"
+  ],
+  "ui_elements": [
+    "button",
+    "logo"
+  ],
+  "platform": "android",
+  "image": "1727971878175.jpg",
+  "date": "2024-10-03T16:11:21.142Z"
+}
