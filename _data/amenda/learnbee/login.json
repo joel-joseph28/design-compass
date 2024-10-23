@@ -1,0 +1,18 @@
+{
+  "name": "Learnbee",
+  "user_flow": [
+    "logging-in"
+  ],
+  "screens": [
+    "signup",
+    "login"
+  ],
+  "ui_elements": [
+    "button",
+    "logo",
+    "icon"
+  ],
+  "platform": "android",
+  "image": "1729691599583.jpg",
+  "date": "2024-10-23T13:53:25.755Z"
+}
