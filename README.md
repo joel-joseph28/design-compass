@@ -35,7 +35,7 @@ The `app` folder contains all the Next.js code for the Design Compass platform. 
 
 ### Special Note for Non-Technical Contributors
 
-> To create a new folder and a file in the same commit, hit create new file and type `foldername/filename.json`. (e.g., `instagram/login.json`)
+- To create a new folder and a file in the same commit, hit create new file and type `foldername/filename.json`. (e.g., `instagram/login.json`)
 - You can contribute multiple screens for the same app by creating new JSON files in the same app folder.
 ---
 - Please ensure that the JSON data you generate is accurate and complete.
